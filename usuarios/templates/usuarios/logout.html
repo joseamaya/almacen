@@ -1,0 +1,17 @@
+{% extends "usuarios/base.html" %}
+{% block main_content %}
+<div class="span4">
+	<div class="nav nav-list well">
+		<h2>
+			Adios
+		</h2>
+		<p>Gracias por usar nuestra aplicación, vuelva pronto</p>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">&nbsp;</div>
+	</div>
+	<div class="nav nav-list well">
+		Empezar de nuevo.<a href="{% url 'usuarios:login' %}">Login</a>
+    </div>
+</div>
+{% endblock main_content %}			
