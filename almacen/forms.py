@@ -1,6 +1,7 @@
 from django import forms
 from django.forms import ModelForm
-from almacen.models import Tipo, Almacen
+from almacen.models import Tipo, Almacen, Zona
+from usuarios.models import Empresa
 
 class TipoIngresoForm(forms.ModelForm):
 
@@ -20,6 +21,16 @@ class TipoIngresoForm(forms.ModelForm):
 
 class AlmacenForm(forms.ModelForm):
 
+    def __init__(self, *args, **kwargs):
+        super(AlmacenForm, self).__init__(*args, **kwargs)
+        self.fields['empresa'].queryset = Empresa.objects.filter(codigo='001')        
+
     class Meta:
         model = Almacen
         fields =['descripcion','empresa','zona']
+
+class ZonaForm(forms.ModelForm):
+
+    class Meta:
+        model = Zona
+        fields =['descripcion']

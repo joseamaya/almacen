@@ -1,12 +1,13 @@
 from django.shortcuts import render
-from almacen.models import Tipo, Almacen, Suministro, Movimiento, DetalleMovimiento, GrupoSuministros
+from almacen.models import Tipo, Almacen, Suministro, Movimiento, DetalleMovimiento, GrupoSuministros, Zona
+from usuarios.models import Usuario
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
 import json
 from django.db import connection
 import datetime,time
 from django.views.generic import TemplateView, FormView
-from almacen.forms import TipoIngresoForm, AlmacenForm
+from almacen.forms import TipoIngresoForm, AlmacenForm, ZonaForm
 
 # Create your views here.
 def registrar_ingreso(request):
@@ -22,6 +23,9 @@ def registrar_ingreso(request):
 		return HttpResponseRedirect(reverse('almacen:crear_tipo_ingreso'))	
 	almacenes = Almacen.objects.all()
 	if not almacenes:
+		zonas = Zona.objects.all()
+		if not zonas:
+			return HttpResponseRedirect(reverse('almacen:crear_zona'))	 
 		return HttpResponseRedirect(reverse('almacen:crear_almacen'))	
 	tipos_documento = Tipo.objects.filter(tabla="tipo_Documento")
 	suministros = Suministro.objects.all()
@@ -121,8 +125,8 @@ class Bienvenida(TemplateView):
 	template_name = "bienvenida.html"
 
 	def obtener_usuario(self):
-		usuario=self.request
-		return usuario
+		r_usuario=self.request.user
+		return r_usuario
 
 	def get_context_data(self, **kwargs): 
 		return {'usuario': self.obtener_usuario()}
@@ -137,10 +141,19 @@ class CrearTipoIngreso(FormView):
     	return super(CrearTipoIngreso, self).form_valid(form)
 
 class CrearAlmacen(FormView):
-    template_name = 'almacen.html'
-    form_class = AlmacenForm
+	template_name = 'almacen.html'
+	form_class = AlmacenForm
+	success_url = '/almacen/registrar_ingreso'
+
+	def form_valid(self, form):
+		form.save()
+		return super(CrearAlmacen, self).form_valid(form)
+
+class CrearZona(FormView):
+    template_name = 'zona.html'
+    form_class = ZonaForm
     success_url = '/almacen/registrar_ingreso'
 
     def form_valid(self, form):
     	form.save()
-    	return super(CrearAlmacen, self).form_valid(form)
+    	return super(CrearZona, self).form_valid(form)
