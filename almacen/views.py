@@ -145,6 +145,9 @@ class CrearAlmacen(FormView):
 	form_class = AlmacenForm
 	success_url = '/almacen/registrar_ingreso'
 
+	def get_form(self, form_class):
+		return form_class(self.request.user.empresa, **self.get_form_kwargs())
+
 	def form_valid(self, form):
 		form.save()
 		return super(CrearAlmacen, self).form_valid(form)

@@ -21,9 +21,9 @@ class TipoIngresoForm(forms.ModelForm):
 
 class AlmacenForm(forms.ModelForm):
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, empresa,*args, **kwargs):
         super(AlmacenForm, self).__init__(*args, **kwargs)
-        self.fields['empresa'].queryset = Empresa.objects.filter(codigo='001')        
+        self.fields['empresa'].queryset = Empresa.objects.filter(codigo=empresa.codigo)        
 
     class Meta:
         model = Almacen
