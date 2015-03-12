@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<h2 class="text-center">Reporte por Producto</h1>	
+<h2 class="text-center">Periodo: {{ mes }} - {{ anio }}</h2>	
+<table class="table table-striped">
+<tbody>
+	<tr>
+		<td>
+			Codigo: {{ suministro.codigo }}  	
+		</td>
+		<td>
+			Denominación: {{ suministro.descripcion }}
+		</td>
+		<td>
+			Unidad: {{ suministro.tipo_unidad_medida}}
+		</td>
+	</tr>
+</tbody>
+</table>
+<table class="table table-bordered">
+<tbhead>
+	<tr>
+		<th>FECHA</th>
+		<th>NRO DOCUMENTO</th>
+		<th>C/C</th>	
+		<th>CANTIDAD</th>	
+		<th>P. UNITARIO</th>
+		<th>IMPORTE</th>
+		<th>CANTIDAD</th>	
+		<th>P. UNITARIO</th>
+		<th>IMPORTE</th>
+		<th>CANTIDAD</th>	
+		<th>P. UNITARIO</th>
+		<th>IMPORTE</th>
+	</tr>
+</tbhead>
+<tbody>
+{% for k in listado_kardex %}
+	<tr>
+		<td>{{ k.fecha_operacion|date:"d/m/Y"}}</td>
+		<td>{{ k.id_movimiento.id_movimiento }}</td>
+		<td></td>
+		<td>{{ k.cantidade }}</td>
+		<td>{{ k.precioe }}</td>		 
+		<td>{{ k.valore }}</td>
+		<td>{{ k.cantidads }}</td>
+		<td>{{ k.precios }}</td>		 
+		<td>{{ k.valors }}</td>
+		<td>{{ k.cantidadt }}</td>
+		<td>{{ k.preciot }}</td>		 
+		<td>{{ k.valort }}</td>			
+	</tr>	
+{% endfor %}
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>{{ t_cantidad_e }}</td>
+		<td></td>
+		<td>{{ t_valor_e }}</td>
+		<td>{{ t_cantidad_s }}</td>
+		<td></td>
+		<td>{{ t_valor_s }}</td>
+		<td>{{ t_cantidad_t }}</td>
+		<td></td>
+		<td>{{ t_valor_t }}</td>
+	</tr>	
+</tbody>
+</table>
+{% if is_paginated %}
+    <div class="pagination">
+        <span class="page-links">
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+            {% endif %}
+            <span class="page-current">
+                Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}.
+            </span>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">Siguiente</a>
+            {% endif %}
+        </span>
+    </div>
+{% endif %}
+{% endblock main_content %}

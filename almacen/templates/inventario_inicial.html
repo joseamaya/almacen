@@ -2,19 +2,10 @@
 
 {% block main_content %}
 
-	<form action="{% url 'almacen:registrar_ingreso' %}" method="post" class="form-control">
+	<form action="{% url 'almacen:registrar_inventario_inicial' %}" method="post" class="form-control">
 		{% csrf_token %}
-		<legend>INGRESAR MOVIMIENTO</legend>		
+		<legend>INGRESAR INVENTARIO INICIAL</legend>		
 		<div class="row-fluid">
-			<div class="span3">
-				TIPO DE INGRESO: 
-				<select id="tipos_ingreso" name="tipos_ingreso">
-					<option value="">Elija un tipo de ingreso</option>
-					{% for tipo_ingreso in tipos_ingreso %}
-						<option value="{{ tipo_ingreso.id }}">{{ tipo_ingreso.descripcion_valor }}</option>
-					{% endfor %}}
-				</select>
-			</div>
 			<div class="span3">
 				ALMACEN: 
 				<select id="almacenes" name="almacenes">
@@ -29,23 +20,6 @@
 			<div class="span3">
 			Fecha<input type="text" name="fecha" id="fecha" readonly/><br />							
 			</div>		
-		</div>
-		<div class="row-fluid">
-			<div class="span3">
-				DOC. REFER: 
-				<select id="tipos_documento" name="tipos_documento">
-					<option value="">Elija un documento</option>
-					{% for tipo_documento in tipos_documento %}
-						<option value="{{ tipo_documento.id_tabla_tipo  }}">{{ tipo_documento.descripcion_valor }}</option>
-					{% endfor %}}
-				</select>		
-			</div>
-			<div class="span3">
-				SERIE<input type="text" name="serie" id="serie"/><br />							
-			</div>
-			<div class="span3">
-				NUMERO<input type="text" name="numero" id="numero"/><br />							
-			</div>
 		</div>
 		<div class="row-fluid">
 		<br/>

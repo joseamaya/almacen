@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<h1>Suministros</h1>
+<table class="table table-striped">
+<tbhead>
+	<tr>
+		<th>CODIGO</th>
+		<th>DESCRIPCION</th>
+		<th>GRUPO SUMINISTROS</th>	
+		<th>UNIDAD DE MEDIDA</th>	
+		<th>TIPO DE STOCK</th>
+		<th>VER</th>
+		<th>EDITAR</th>
+	</tr>
+</tbhead>
+<tbody>
+{% for suministro in suministros %}
+	<tr>
+		<td>{{ suministro.codigo }}</td>
+		<td>{{ suministro.descripcion }}</td>
+		<td>{{ suministro.grupo_suministros }}</td>
+		<td>{{ suministro.tipo_unidad_medida }}</td>		 
+		<td>{{ suministro.tipo_stock }}</td>	
+		<td>
+			<a class="btn btn-small" href="{% url 'almacen:detalle_suministro' suministro.pk %}">
+			    <i class="icon-eye-open"></i>
+			</a>
+		</td>	 
+		<td>
+            <a class="btn btn-small" href="{% url 'almacen:modificar_suministro' suministro.pk %}">
+                <i class="icon-pencil"></i>
+            </a>
+        </td>
+	</tr>
+{% endfor %}
+</tbody>
+</table>
+{% if is_paginated %}
+    <div class="pagination">
+        <span class="page-links">
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+            {% endif %}
+            <span class="page-current">
+                Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}.
+            </span>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">Siguiente</a>
+            {% endif %}
+        </span>
+    </div>
+{% endif %}
+{% endblock main_content %}

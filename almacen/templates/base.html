@@ -24,15 +24,22 @@
 						<a href="#" class="brand">MÓDULO DE ALMACEN</a>
 						<ul class="nav pull-right">
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ingresar Actas<b class="caret"></b></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Operaciones<b class="caret"></b></a>
 								<ul class="dropdown-menu" role="menu">
 									<li><a href="{% url 'almacen:registrar_ingreso' %}">Registrar Ingreso</a></li>									
 								</ul>
-							</li>							
 							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Reportes<b class="caret"></b></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="{% url 'almacen:reporte_suministros' %}">Reporte de suministros</a></li>									
+									<li><a href="{% url 'almacen:kardex_suministro' %}">Kardex por Suministro</a></li>									
+								</ul>
+							</li>														
 							<li class="divider-vertical"></li>													
 						</ul>						
 					</div>
+
 						
 				</div>
 			</div>

@@ -19,7 +19,7 @@ def Login(request):
 				except Usuario.DoesNotExist:
 					return HttpResponseRedirect(reverse('usuarios:login'))
 				login(request, usuario)
-				return HttpResponseRedirect(reverse('almacen:bienvenida'))				
+				return HttpResponseRedirect(reverse('almacen:inicio'))				
 			else:
 				return HttpResponseRedirect(reverse('usuarios:login'))				
 		else:

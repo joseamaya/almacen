@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<h1>Detalle de Suministro</h1>
+<p>Codigo: {{ object.codigo }}</p>
+<p>Nombre: {{ object.descripcion }}</p>
+<p>Grupo de Suministros: {{ object.grupo_suministros }}</p>
+<p>Precio: {{ object.precio_mercado }}</p>
+<p>Tipo de Unidad: {{ object.tipo_unidad_medida }}</p>
+<p>Tipo de Stock: {{ object.tipo_stock }}</p>
+<p>Especificaciones: {{ object.especificaciones }}</p>
+<p>Fecha de registro: {{ object.fecha_registro }}</p>
+{% endblock main_content %}

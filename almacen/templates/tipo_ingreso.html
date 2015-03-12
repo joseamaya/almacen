@@ -5,7 +5,7 @@
 	<form action="{% url 'almacen:crear_tipo_ingreso' %}" method="post" class="form-control">
 		{% csrf_token %}
 		{{ form.as_p }}
-		<input type="submit" name="submit" value="Crear Tipo">
+		<input type="submit" name="submit" value="Crear Tipo de Ingreso">
 	</form>
 
 {% endblock main_content %}

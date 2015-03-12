@@ -1,0 +1,173 @@
+﻿1;tipo_suministros         ;id_tipo_suministro       ;B         ;EXISTENCIA;NULL
+2;tipo_suministros         ;id_tipo_suministro       ;S         ;SERVICIO;NULL
+3;tipo_suministros         ;id_tipo_suministro       ;A         ;ACTIVO FIJO;NULL
+4;Tipo_ABC                 ;id_tipo_abc              ;A         ;A;NULL
+5;Tipo_ABC                 ;id_tipo_abc              ;B         ;B;NULL
+6;Tipo_ABC                 ;id_tipo_abc              ;C         ;C;NULL
+7;Tipo_Estado_Pedido       ;id_tipo_estado_pedido    ;AL        ;ATENDIDO LOGISTICA;NULL
+8;Tipo_Estado_Pedido       ;id_tipo_estado_pedido    ;RA        ;RECHAZADO;NULL
+9;Tipo_Estado_Pedido       ;id_tipo_estado_pedido    ;NA        ;NO ATENDIDO;NULL
+10;Tipo_Prioridad           ;id_tipo_prioridad        ;AP        ;ALTA;NULL
+11;Tipo_Prioridad           ;id_tipo_prioridad        ;NP        ;NORMAL;NULL
+12;Tipo_Prioridad           ;id_tipo_prioridad        ;BP        ;BAJA;NULL
+13;Tipo_Prioridad           ;id_tipo_prioridad        ;EP        ;EMERGENCIA;NULL
+14;tipo_asignacion_contable ;id_asignacion_contable   ;CTAALM    ;CTA ALMACEN;NULL
+15;tipo_asignacion_contable ;tipo_asignacion_contable ;CTATRAN   ;CTA BIENES TRANSITO;NULL
+16;tipo_asignacion_contable ;tipo_asignacion_contable ;CTACOMP   ;CTA COMPRAS;NULL
+17;tipo_asignacion_contable ;tipo_asignacion_contable ;CTAVAREX  ;CTA VARIACION EXISTENCIAS;NULL
+18;tipo_asignacion_contable ;tipo_asignacion_contable ;CTAPROV   ;CTA PROVEEDORES;NULL
+19;tipo_asignacion_contable ;tipo_asignacion_contable ;CTALINK   ;CTA TRANSF. ENTRE ALMACENES;NULL
+20;tipo_asignacion_contable ;tipo_asignacion_contable ;SOBOBRA   ;CTA SOBRANTES OBRA;NULL
+21;tipo_asignacion_contable ;tipo_asignacion_contable ;DONACION  ;CTA DONACIONES;NULL
+22;tipo_asignacion_contable ;tipo_asignacion_contable ;ACMD      ;CTA ACM DEBE;NULL
+23;tipo_asignacion_contable ;tipo_asignacion_contable ;ACMH      ;CTA ACM HABER;NULL
+24;tipo_asignacion_contable ;tipo_asignacion_contable ;CTA721    ;CTA PROVISION INMOVILIZADA;NULL
+25;tipo_asignacion_contable ;tipo_asignacion_contable ;CTAREC    ;CTA RECLAMOS;NULL
+26;tipo_unidad_medida       ;tipo_unidad_medida       ;BL        ;BLOCK;NULL
+29;tipo_unidad_medida       ;tipo_unidad_medida       ;L         ;LITRO;NULL
+30;tipo_unidad_medida       ;tipo_unidad_medida       ;M         ;METRO;NULL
+31;tipo_unidad_medida       ;tipo_unidad_medida       ;M2        ;METRO CUADRADO;NULL
+32;tipo_unidad_medida       ;tipo_unidad_medida       ;M3        ;METRO CUBICO;NULL
+33;tipo_unidad_medida       ;tipo_unidad_medida       ;MI        ;MILLAR;NULL
+34;tipo_unidad_medida       ;tipo_unidad_medida       ;KG        ;KILOGRAMO;NULL
+35;tipo_unidad_medida       ;tipo_unidad_medida       ;T         ;TONELADA;NULL
+36;tipo_unidad_medida       ;tipo_unidad_medida       ;PAR       ;PAR;NULL
+37;tipo_unidad_medida       ;tipo_unidad_medida       ;C         ;CIENTO;NULL
+38;tipo_unidad_medida       ;tipo_unidad_medida       ;JGO       ;JUEGO;NULL
+39;tipo_unidad_medida       ;tipo_unidad_medida       ;UN        ;UNIDAD;NULL
+40;tipo_unidad_medida       ;tipo_unidad_medida       ;P2        ;PIE CUADRADO;NULL
+41;tipo_unidad_medida       ;tipo_unidad_medida       ;LBR       ;LIBRA;NULL
+42;tipo_stock               ;tipo_stock               ;NS        ;NO STOCK;NULL
+43;tipo_stock               ;tipo_stock               ;S         ;STOCK;NULL
+44;tipo_stock               ;tipo_stock               ;I         ;INVERSION;NULL
+45;tipo_stock               ;tipo_stock               ;E         ;ESTRATEGICO;NULL
+46;tipo_asignacion_contable ;tipo_asignacion_contable ;ACTMAT    ;CTA ACTIVO;NULL
+47;tipo_asignacion_contable ;tipo_asignacion_contable ;CTASER    ;CTA SERVICIOS;NULL
+48;tipo_via                 ;tipo_via                 ;01        ;AV.  AVENIDA;NULL
+49;tipo_via                 ;tipo_via                 ;02        ;CALLE;NULL
+50;tipo_via                 ;tipo_via                 ;03        ;AVENIDA;NULL
+51;tipo_via                 ;tipo_via                 ;04        ;PJ PASAJE;NULL
+52;tipo_via                 ;tipo_via                 ;05        ;ALM ALAMEDA;NULL
+53;tipo_via                 ;tipo_via                 ;06        ;MLC MALECON;NULL
+54;tipo_via                 ;tipo_via                 ;07        ;OVL OVALO;NULL
+55;tipo_via                 ;tipo_via                 ;08        ;PQ PARQUE;NULL
+56;tipo_via                 ;tipo_via                 ;09        ;PZA PLAZA;NULL
+57;tipo_via                 ;tipo_via                 ;10        ;CAR CARRETERA;NULL
+58;tipo_via                 ;tipo_via                 ;11        ;BL BLOCK;NULL
+59;tipo_via                 ;tipo_via                 ;12        ;---;NULL
+61;tipo_lugar_residencia    ;tipo_lugar_residencia    ;01        ;URB URBANIZACION;NULL
+62;tipo_lugar_residencia    ;tipo_lugar_residencia    ;02        ;PJ PUEBLO JOVEN;NULL
+63;tipo_lugar_residencia    ;tipo_lugar_residencia    ;03        ;UV UNIDAD VECINAL;NULL
+64;tipo_lugar_residencia    ;tipo_lugar_residencia    ;04        ;CH CONJUNTO HABITACIONAL;NULL
+65;tipo_lugar_residencia    ;tipo_lugar_residencia    ;05        ;AH ASENTAMIENTO HUMANO;NULL
+66;tipo_lugar_residencia    ;tipo_lugar_residencia    ;06        ;COO COOPERATIVA;NULL
+67;tipo_lugar_residencia    ;tipo_lugar_residencia    ;07        ;RES RESIDENCIAL;NULL
+68;tipo_lugar_residencia    ;tipo_lugar_residencia    ;08        ;ZI ZONA INDUSTRIAL;NULL
+69;tipo_lugar_residencia    ;tipo_lugar_residencia    ;09        ;GRU GRUPO;NULL
+70;tipo_lugar_residencia    ;tipo_lugar_residencia    ;10        ;CAS CASERIO;NULL
+71;tipo_lugar_residencia    ;tipo_lugar_residencia    ;11        ;FND FUNDO;NULL
+72;tipo_lugar_residencia    ;tipo_lugar_residencia    ;12        ;OTROS;NULL
+73;tipo_origenTarea         ;tipo_origentarea         ;01        ;NOTA PEDIDO;NULL
+74;tipo_origenTarea         ;tipo_origentarea         ;02        ;ORDEN;NULL
+75;tipo_administradorTarea  ;tipo_administradorTarea  ;01        ;APROVISIONAMIENTO;NULL
+76;tipo_administradorTarea  ;tipo_administradorTarea  ;02        ;ALMACEN;NULL
+77;tipo_estadoTarea         ;tipo_estadoTarea         ;01        ;PENDIENTE;NULL
+78;tipo_estadoTarea         ;tipo_estadoTarea         ;02        ;REALIZADO;NULL
+79;tipo_Movimiento          ;tipo_Movimiento          ;I         ;INGRESO;NULL
+80;tipo_Movimiento          ;tipo_Movimiento          ;S         ;SALIDA;NULL
+81;tipo_Ingreso             ;tipo_Ingreso             ;00        ;CON ORDEN DE COMPRA;NULL
+82;tipo_Ingreso             ;tipo_Ingreso             ;02        ;REGULARIZAR INGRESO;NULL
+83;tipo_Ingreso             ;tipo_Ingreso             ;11        ;TRANSFERENCIA;NULL
+87;tipo_Documento           ;tipo_Documento           ;03        ;BOLETA;NULL
+88;tipo_Documento           ;tipo_Documento           ;01        ;FACTURA;NULL
+89;tipo_Orden               ;tipo_Orden               ;01        ;COMPRA;NULL
+90;tipo_Orden               ;tipo_Orden               ;02        ;SERVICIOS;NULL
+91;Tipo_Estado_Orden        ;id_tipo_estado_orden     ;NA        ;NO ATENDIDA;NULL
+92;Tipo_Estado_Orden        ;id_tipo_estado_orden     ;PA        ;PARCIALMENTE ATENDIDA;NULL
+93;Tipo_Estado_Orden        ;id_tipo_estado_orden     ;TA        ;TOTALMENTE ATENDIDA;NULL
+94;Tipo_moneda              ;id_tipo_moneda           ;01        ;SOLES;NULL
+95;Tipo_moneda              ;id_tipo_moneda           ;02        ;DOLARES;NULL
+96;Tipo_Plantilla           ;id_tipo_plantilla        ;01        ;IGV.;NULL
+97;Tipo_Plantilla           ;id_tipo_plantilla        ;02        ;I.P.M.;NULL
+98;Tipo_FormaPago           ;id_tipo_formaPago        ;01        ;CONTADO;0.00
+99;Tipo_FormaPago           ;id_tipo_formaPago        ;02        ;CONTRAENTREGA;0.00
+100;Tipo_FormaPago           ;id_tipo_formaPago        ;03        ;FACTURA A 20 DIAS;20.00
+101;Tipo_Estado_Pedido       ;id_tipo_estado_pedido    ;AA        ;ATENDIDO ALMACEN;NULL
+102;Tipo_Estado_Pedido       ;id_tipo_estado_pedido    ;AC        ;ACEPTADO;NULL
+103;tipo_administradorTarea  ;tipo_administradorTarea  ;00        ;NINGUNO;NULL
+104;tipo_Documento           ;tipo_Documento           ;09        ;GUIA REMISION;NULL
+105;tipo_Documento           ;tipo_Documento           ;02        ;RECIBO POR HONORARIOS;NULL
+106;tipo_Documento           ;tipo_Documento           ;14        ;RECIBOS POR SERVICIO PUBLICO;NULL
+107;tipo_Documento           ;tipo_Documento           ;07        ;NOTA DE CREDITO;NULL
+108;tipo_Documento           ;tipo_Documento           ;08        ;NOTA DE DEBITO;NULL
+109;tipo_Documento           ;tipo_Documento           ;NS        ;NOTA DE SALIDA;NULL
+110;tipo_Documento           ;tipo_Documento           ;FP        ;FACTURA DE PROVEEDOR;NULL
+111;tipo_Documento           ;tipo_Documento           ;TP        ;TRANSFERENCIA PRONAP;NULL
+112;tipo_Documento           ;tipo_Documento           ;SI        ;POR SOBRANTE DE INVENTARIO;NULL
+113;tipo_Documento           ;tipo_Documento           ;BS        ;BOLETA DE SALIDA;NULL
+114;tipo_Documento           ;tipo_Documento           ;NI        ;NOTA DE INGRESO;NULL
+115;tipo_Documento           ;tipo_Documento           ;DN        ;DONACIONES;NULL
+116;tipo_Documento           ;tipo_Documento           ;06        ;COMPROBANTE DE PAGO MUNICIPIOS;NULL
+117;Tipo_FormaPago           ;id_tipo_formaPago        ;04        ;FACTURA 45 DIAS;45.00
+118;Tipo_FormaPago           ;id_tipo_formaPago        ;05        ;FACTURA 60 DIAS;60.00
+119;Tipo_FormaPago           ;id_tipo_formaPago        ;06        ;FACTURA 90 DIAS;90.00
+120;Tipo_FormaPago           ;id_tipo_formaPago        ;07        ;FACTURA 120 DIAS;120.00
+121;Tipo_FormaPago           ;id_tipo_formaPago        ;08        ;FACTURA 150 DIAS;150.00
+122;Tipo_FormaPago           ;id_tipo_formaPago        ;09        ;FACTURA  >=151 DIAS;151.00
+123;Tipo_Licitacion          ;id_tipo_licitacion       ;LP        ;LICITACION PUBLICA;60.00
+124;Tipo_Licitacion          ;id_tipo_licitacion       ;CP        ;CONCURSO PUBLICO;60.00
+125;Tipo_Licitacion          ;id_tipo_licitacion       ;AP        ;ADJUDICACION PUBLICA;45.00
+126;Tipo_Licitacion          ;id_tipo_licitacion       ;AS        ;ADJUDICACION SELECTIVA;45.00
+127;Tipo_Licitacion          ;id_tipo_licitacion       ;MC        ;MENOR CUANTIA;30.00
+128;Tipo_Plantilla           ;id_tipo_plantilla        ;03        ;I.RENTA 4TA & I.SOLIDAR. + 509;NULL
+129;Tipo_Plantilla           ;id_tipo_plantilla        ;04        ;I.RENTA 4TA & I.SOLIDAR. - 509;NULL
+130;Tipo_Plantilla           ;id_tipo_plantilla        ;05        ;I.RENTA 4TA;NULL
+131;Tipo_Plantilla           ;id_tipo_plantilla        ;06        ;I.SOLIDAR.  + 509;NULL
+132;Tipo_Plantilla           ;id_tipo_plantilla        ;07        ;I.SOLIDARIDAD 2%;NULL
+133;Tipo_Plantilla           ;id_tipo_plantilla        ;08        ;SIN IMPUESTOS;NULL
+134;Tipo_Plantilla           ;id_tipo_plantilla        ;09        ;I.R.;NULL
+135;Tipo_Estado_Suministro   ;id_tipo_estado_suministro;01        ;LICITADO;NULL
+136;Tipo_Salida              ;Tipo_Salida              ;10        ;SALIDA A PRODUCCION;NULL
+137;Tipo_Salida              ;Tipo_Salida              ;02        ;DESCARTE;NULL
+138;tipo_actividad           ;tipo_actividad           ;01.00     ;REPARACIONES DE TUBERÍA DE AGUA POTABLE;NULL
+139;tipo_actividad           ;tipo_actividad           ;02.00     ;SUMINISTRO E INSTALACION DE TUBERÍAS DE PVC;NULL
+140;tipo_actividad           ;tipo_actividad           ;03.00     ;SUMINISTRO E INSTALACIÓN DE ACCESORIOS P/AGUA;NULL
+141;Tipo_Estado_Orden        ;id_tipo_estado_orden     ;AN        ;ANULADA;NULL
+142;tipo_alerta              ;id_tipo_alerta           ;A001      ;SOLICITAR REESTRUCTURACION DE LA LICITACION - INCONSISTENCIA;NULL
+143;tipo_alerta              ;id_tipo_alerta           ;A002      ;SOLICITAR ABASTECIMIENTO DEL SUMINISTRO;NULL
+144;tipo_alerta              ;id_tipo_alerta           ;A003      ;SOLICITAR ATENCION DE PEDIDO;NULL
+145;tipo_alerta              ;id_tipo_alerta           ;A004      ;SOLICITAR INGRESAR DOCUMENTO A LA ORDEN ;NULL
+146;tipo_alerta              ;id_tipo_alerta           ;A005      ;SOLICITAR AL PROVEEDOR INGRESAR SUMINISTROS ;NULL
+147;tipo_alerta              ;id_tipo_alerta           ;A006      ;SOLICITAR SE UBIQUEN LOS SUMINISTROS EN ALMACEN;NULL
+148;tipo_alerta              ;id_tipo_alerta           ;A007      ;SOLICITAR SE RECOJA EL PEDIDO EN  ALMACEN;NULL
+149;tipo_Ingreso             ;tipo_Ingreso             ;05        ;AJUSTE INVENTARIO;NULL
+150;Tipo_Salida              ;Tipo_Salida              ;09        ;AJUSTE INVENTARIO;NULL
+151;tipo_documento_sistema   ;tipo_documento_sistema   ;01        ;ORDEN;NULL
+152;tipo_documento_sistema   ;tipo_documento_sistema   ;02        ;MOVIMIENTO INGRESO;NULL
+153;tipo_documento_sistema   ;tipo_documento_sistema   ;03        ;MOVIMIENTO SALIDA;NULL
+154;tipo_administradorTarea  ;tipo_administradorTarea  ;03        ;PLANIFICACION;NULL
+155;tipo_unidad_medida       ;tipo_unidad_medida       ;ROLLO     ;ROLLO;NULL
+156;tipo_unidad_medida       ;tipo_unidad_medida       ;PAQ       ;PAQUETE;NULL
+157;tipo_unidad_medida       ;tipo_unidad_medida       ;BLSA      ;BOLSA;NULL
+158;tipo_unidad_medida       ;tipo_unidad_medida       ;PZA       ;PIEZA;NULL
+159;tipo_Ingreso             ;tipo_Ingreso             ;04        ;DEVOLUCION;NULL
+160;Tipo_Salida              ;Tipo_Salida              ;03        ;DESPACHO;NULL
+161;Tipo_Salida              ;Tipo_Salida              ;14        ;DESMEDRO;NULL
+162;Tipo_Salida              ;Tipo_Salida              ;13        ;MERMA;NULL
+163;Tipo_Salida              ;Tipo_Salida              ;06        ;SENASA;NULL
+164;Tipo_Salida              ;Tipo_Salida              ;11        ;TRANSFERENCIA ENTRE ALMACENES;NULL
+165;Tipo_Salida              ;Tipo_Salida              ;08        ;OTROS;NULL
+166;tipo_Ingreso             ;tipo_Ingreso             ;02        ;RECEPCION DE PRODUCTOS;NULL
+168;Tipo_FormaPago           ;id_tipo_formaPago        ;10        ;FACTURA A 30 DIAS;30.00
+169;tipo_Ingreso             ;tipo_Ingreso             ;07        ;DESCARTE;NULL
+170;Tipo_Salida              ;Tipo_Salida              ;01        ;VENTA;NULL
+171;Tipo_FormaPago           ;id_tipo_formaPago        ;11        ;LETRA A 30 DIAS;30.00
+172;Tipo_FormaPago           ;id_tipo_formaPago        ;12        ;LETRA A 45 DIAS;45.00
+173;Tipo_FormaPago           ;Tipo_FormaPago           ;13        ;LETRA A 60 DIAS;60.00
+174;Tipo_FormaPago           ;Tipo_FormaPago           ;14        ;LETRA A 90 DIAS;90.00
+175;Tipo_FormaPago           ;Tipo_FormaPago           ;15        ;LETRA A 120 DIAS;120.00
+176;tipo_unidad_medida       ;tipo_unidad_medida       ;GL        ;GALON;NULL
+177;tipo_unidad_medida       ;tipo_unidad_medida       ;CJA       ;CAJA;NULL
+178;tipo_unidad_medida       ;tipo_unidad_medida       ;BID       ;BIDON;NULL
+179;tipo_Documento           ;tipo_Documento           ;PEC       ;PECOSA;NULL
+180;tipo_Documento           ;tipo_Documento           ;12        ;TICKET;NULL
